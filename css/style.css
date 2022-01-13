@@ -3,6 +3,11 @@
 
 /* common styles or utilities*/
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
@@ -26,6 +31,71 @@ hr{
     border: 1px solid #d1d1d1;
     margin-bottom: 27px;
 }
+
+nav{
+    background-color: #562eff;
+    padding: 10px 0;
+}
+
+/* navigation */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container{
+    width: 870px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.logo-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title {
+    font-size: 21px;
+    color: #fff;
+    position: relative;
+    top: -7px;
+    left: 10px;
+}
+
+.logo-part .logo {
+    width: 45px;
+    height: auto;
+}
+
+.nav-contents{
+    display: flex;
+}
+
+.nav-contents ul{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-contents li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.nav-contents a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav-contents .nav-author img {
+    width: 55px;
+    height: 55px;
+}
+
 
 /* top players styles  */
 
@@ -163,6 +233,43 @@ hr{
     color: rgb(255, 255, 255);
 }
 
+/* footer */
+
+.footer-section{
+    margin-top: 80px;
+}
+
+.footer-background{
+    background-color: #562eff;
+    padding: 40px 0;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-title{
+    font-size: 21px;
+    color: #fff;
+    position: relative;
+    top: -7px;
+    left: 10px;
+}
+
+.footer-logo .logo{
+    width: 45px;
+    height: auto;
+}
+
+.copyright-text{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 688px) {
@@ -190,7 +297,6 @@ hr{
 
     .players, .courses{
         grid-template-columns: repeat(2, 1fr);
-        grid-colu
     }
 
     .blogs{
